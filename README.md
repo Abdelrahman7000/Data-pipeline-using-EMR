@@ -12,5 +12,26 @@ In this simple project, I used the following aws tools:
 </ul>
 <img src='https://github.com/user-attachments/assets/2bd03164-19e9-4a5f-a89c-307c91485137'>
 
-<h2>The following is the step function workflow</h2>
+<h3>The following is the step function workflow</h3>
 <img src='https://github.com/user-attachments/assets/dce2bcad-c5e9-4e29-9713-98e453529a9d'>
+
+<h3>Structure</h3>
+<ul>
+  <li> <b>get_users.py </b>: python script to fetch the API data.</li>
+  <li> <b>spark-etl.py </b> : The main Spark script used for transformation part.</li>
+</ul>
+
+
+<h3>Usage</h3>
+you need to run the following command from the primary node of the EMR cluster:
+
+` spark-submit spark-etl.py [s3-input-folder] [s3-output-folder] `
+
+Replace [s3-input-folder] with the path to the input data directory and [s3-output-folder] with the path where you want to save the output.
+
+<h3>Requirements</h3>
+<ul>
+  <li>Apache Spark</li>
+  <li>AWS CLI</li>
+  <li>An AWS account with necessary permissions to create and manage EMR clusters</li>
+</ul>
