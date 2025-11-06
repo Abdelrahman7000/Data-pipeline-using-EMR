@@ -6,7 +6,7 @@ In this simple project, I used the following aws tools:
   <li> <b>AWS Lambda</b>: To fetch data from an external API. </li>
   <li> <b>AWS S3</b>: To store the raw data retrieved from the API.</li>
   <li> <b>AWS EMR</b>: To transform and clean the incoming data, then load the processed data back into S3 using pyspark.</li>
-  <li> <b>AWS Step functions</b> : To orchestrate and schedule the execution of the Lambda function and EMR jobs.</li>
+  <li> <b>AWS Step function</b> : To orchestrate and schedule the execution of the Lambda function and EMR jobs.</li>
   <li> <b>AWS Glue</b>: To catalog and manage metadata for the cleaned data stored in S3. </li>
   <li> <b>AWS Athena</b>: To query the transformed data in S3 using SQL.</li>
 </ul>
